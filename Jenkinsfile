@@ -1,4 +1,5 @@
-node (label: 'viis'){
+Pipeleine {
+ node (label: 'viis'){
   stage("ssh-agent") {
     sshagent (credentials : ['admin_server']) {
     stage ('Fill_CM_Vars.xml') {
@@ -11,4 +12,5 @@ node (label: 'viis'){
     }
     }
   }
+}
 }
